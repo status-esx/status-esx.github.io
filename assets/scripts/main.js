@@ -36,9 +36,9 @@ $.ajax({
     $('#status').addClass('orange');
     $('#status').removeClass('green yellow');
   },
-  success: (bastion) => {
+  success: (esx) => {
     let element = document.getElementById('esx:bot');
-    element.innerHTML = bastion.status.charAt(0).toUpperCase() + bastion.status.substr(1).toLowerCase();
+    element.innerHTML = esx.status.charAt(0).toUpperCase() + esx.status.substr(1).toLowerCase();
     if (element.innerHTML.toLowerCase() === 'offline') {
       element.setAttribute('style', 'color: #DD0000');
 
@@ -164,7 +164,7 @@ $.ajax({
         element.insertAdjacentHTML('beforeend',
           `<div id="incident-${i}" class="incident">
             <div class="incident-title">${incidentsToday[i].title}</div>
-            <div class="incident-resolve-status">${incidentsToday[i].resolved ? `<b>Resolvido</b> ${new Date(incidentsToday[i].resolved)}` : 'We are trying to resolve this ASAP. Hang tight.'}</div>
+            <div class="incident-resolve-status">${incidentsToday[i].resolved ? `<b>Resolvido</b> ${new Date(incidentsToday[i].resolved)}` : 'Estamos tentando resolver isso o mais rápido possível. Aguente firme.'}</div>
           </div>`);
 
         for (let report of incidentsToday[i].reports) {
