@@ -27,23 +27,23 @@ $.ajax({
       response: response
     });
 
-    let element = document.getElementById('bastion:bot');
-    element.innerHTML = 'Service Unavailable';
+    let element = document.getElementById('esx:bot');
+    element.innerHTML = 'Serviço indisponível';
     element.setAttribute('style', 'color: #DD0000');
 
     element = document.getElementById('status');
-    element.innerHTML = 'Major Service Outage';
+    element.innerHTML = 'Grande interrupção de serviço';
     $('#status').addClass('orange');
     $('#status').removeClass('green yellow');
   },
   success: (bastion) => {
-    let element = document.getElementById('bastion:bot');
+    let element = document.getElementById('esx:bot');
     element.innerHTML = bastion.status.charAt(0).toUpperCase() + bastion.status.substr(1).toLowerCase();
     if (element.innerHTML.toLowerCase() === 'offline') {
       element.setAttribute('style', 'color: #DD0000');
 
       element = document.getElementById('status');
-      element.innerHTML = 'Major Service Outage';
+      element.innerHTML = 'Grande interrupção de serviço';
       $('#status').addClass('orange');
       $('#status').removeClass('green yellow');
     }
@@ -63,24 +63,24 @@ $.ajax({
       response: response
     });
 
-    let element = document.getElementById('bastion:guild');
-    element.innerHTML = 'Service Unavailable';
+    let element = document.getElementById('esx:guild');
+    element.innerHTML = 'Serviço indisponível';
     element.setAttribute('style', 'color: #DD0000');
 
     element = document.getElementById('status');
-    element.innerHTML = 'Major Service Outage';
+    element.innerHTML = 'Grande interrupção de serviço';
     $('#status').addClass('orange');
     $('#status').removeClass('green yellow');
   },
   success: (guild) => {
-    let element = document.getElementById('bastion:guild');
+    let element = document.getElementById('esx:guild');
     element.innerHTML = 'Online';
     element.setAttribute('style', 'color: #71BF60');
   }
 });
 
 $.ajax({
-  url: 'https://bastionbot.org',
+  url: 'https://esxbot.github.io',
   error: (response, type, exception) => {
     console.error({
       exception: exception,
@@ -88,18 +88,18 @@ $.ajax({
       response: response
     });
 
-    let element = document.getElementById('bastion:website');
-    element.innerHTML = 'Service Unavailable';
+    let element = document.getElementById('esx:website');
+    element.innerHTML = 'Serviço indisponível';
     element.setAttribute('style', 'color: #DD0000');
 
     element = document.getElementById('status');
-    element.innerHTML = 'Major Service Outage';
+    element.innerHTML = 'Grande interrupção de serviço';
     $('#status').addClass('orange');
     $('#status').removeClass('green yellow');
   },
   statusCode: {
     200: () => {
-      let element = document.getElementById('bastion:website');
+      let element = document.getElementById('esx:website');
       element.innerHTML = 'Online';
       element.setAttribute('style', 'color: #71BF60');
     }
@@ -115,18 +115,18 @@ $.ajax({
       response: response
     });
 
-    let element = document.getElementById('bastion:docs');
-    element.innerHTML = 'Service Unavailable';
+    let element = document.getElementById('esx:docs');
+    element.innerHTML = 'Serviço indisponível';
     element.setAttribute('style', 'color: #DD0000');
 
     element = document.getElementById('status');
-    element.innerHTML = 'Major Service Outage';
+    element.innerHTML = 'Grande interrupção de serviço';
     $('#status').addClass('orange');
     $('#status').removeClass('green yellow');
   },
   statusCode: {
     200: () => {
-      let element = document.getElementById('bastion:docs');
+      let element = document.getElementById('esx:docs');
       element.innerHTML = 'Online';
       element.setAttribute('style', 'color: #71BF60');
     }
@@ -164,7 +164,7 @@ $.ajax({
         element.insertAdjacentHTML('beforeend',
           `<div id="incident-${i}" class="incident">
             <div class="incident-title">${incidentsToday[i].title}</div>
-            <div class="incident-resolve-status">${incidentsToday[i].resolved ? `<b>Resolved</b> ${new Date(incidentsToday[i].resolved)}` : 'We are trying to resolve this ASAP. Hang tight.'}</div>
+            <div class="incident-resolve-status">${incidentsToday[i].resolved ? `<b>Resolvido</b> ${new Date(incidentsToday[i].resolved)}` : 'We are trying to resolve this ASAP. Hang tight.'}</div>
           </div>`);
 
         for (let report of incidentsToday[i].reports) {
@@ -172,7 +172,7 @@ $.ajax({
           element.insertAdjacentHTML('beforeend',
             `<div class="incident-description ${incidentsToday[i].resolved ? 'resolved': ''}">
               <b>${report.title}</b> - ${report.description}<br />
-              <span class="incident-report-date">Posted ${new Date(report.time)}<span>
+              <span class="incident-report-date">Publicado ${new Date(report.time)}<span>
             </div>`);
         }
 
@@ -181,8 +181,8 @@ $.ajax({
 
       if (outage) {
         let status = document.getElementById('status');
-        if (status.innerHTML !== 'Major Service Outage') {
-          status.innerHTML = 'Minor System Outage';
+        if (status.innerHTML !== 'Grande interrupção de serviço') {
+          status.innerHTML = 'Interrupção do Sistema Menor';
           $('#status').addClass('yellow');
           $('#status').removeClass('green');
         }
