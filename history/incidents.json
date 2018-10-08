@@ -1,0 +1,43 @@
+{
+  "532018": [
+    {
+      "title": "Server Networking Issue",
+      "reports": [
+        {
+          "title": "Resolved",
+          "description": "The networking issue has been resolved by our cloud provider.",
+          "time": 1520234685526
+        },
+        {
+          "title": "Investigating",
+          "description": "There's a temporary networking issue with Bastion's cloud provider, which might cause Bastion to respond late until it's fixed. They are currently investigating the issue. We appreciate your patience and will post additional information once it becomes available.",
+          "time": 1520233050235
+        }
+      ],
+      "resolved": 1520234685526
+    }
+  ],
+  "1422018": [
+    {
+      "title": "Bastion Bot was down",
+      "reports": [
+        {
+          "title": "Resolved",
+          "description": "Bastion Bot is up and running at full speed and this incident is resolved.",
+          "time": 1518614820000
+        },
+        {
+          "title": "Update",
+          "description": "We've found the cause of the issue being unable to connect to the Discord Gateway. We are looking into why it was caused and try to fix it ASAP.",
+          "time": 1518614340000
+        },
+        {
+          "title": "Identified",
+          "description": "We've identified an issue caused Bastion to go down on all servers. And we are taking steps to find the cause of the issue and to fix it ASAP.",
+          "time": 1518614100000
+        }
+      ],
+      "resolved": 1518614820000
+    }
+  ]
+}
