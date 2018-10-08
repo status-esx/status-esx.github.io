@@ -1,12 +1,12 @@
 $(() => {
   let element = document.getElementById('status');
-  element.innerHTML = 'All Systems Online';
+  element.innerHTML = 'Todos os sistemas online';
   $('#status').addClass('green');
 
   element = document.getElementById('today');
   let today = new Date().toString();
   today = today.split(' ').splice(1, 3);
-  element.innerHTML = `Today, ${today.join(' ')} (GMT)`;
+  element.innerHTML = `Hoje, ${today.join(' ')} (GMT)`;
 });
 
 let sp = new StatusPage.page({ page : 'srhpyqt94yxb' });
@@ -18,7 +18,7 @@ sp.summary({
 });
 
 $.ajax({
-  url: 'https://discordbots.org/api/bots/267035345537728512/status',
+  url: 'https://discordbots.org/api/bots/485515687947665408/status',
   dataType: 'json',
   error: (response, type, exception) => {
     console.error({
@@ -54,7 +54,7 @@ $.ajax({
 });
 
 $.ajax({
-  url: 'https://discordapp.com/api/guilds/267022940967665664/embed.json',
+  url: 'https://discordapp.com/api/guilds/485515687947665408/embed.json',
   dataType: 'json',
   error: (response, type, exception) => {
     console.error({
@@ -107,7 +107,7 @@ $.ajax({
 });
 
 $.ajax({
-  url: 'https://docs.bastionbot.org',
+  url: 'https://docs-esx.github.io',
   error: (response, type, exception) => {
     console.error({
       exception: exception,
