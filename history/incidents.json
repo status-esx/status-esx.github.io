@@ -1,16 +1,16 @@
 {
   "532018": [
     {
-      "title": "Server Networking Issue",
+      "title": "Problema de rede do servidor",
       "reports": [
         {
-          "title": "Resolved",
-          "description": "The networking issue has been resolved by our cloud provider.",
+          "title": "Resolvido",
+          "description": "O problema de rede foi resolvido pelo nosso provedor de nuvem.",
           "time": 1520234685526
         },
         {
-          "title": "Investigating",
-          "description": "There's a temporary networking issue with Bastion's cloud provider, which might cause Bastion to respond late until it's fixed. They are currently investigating the issue. We appreciate your patience and will post additional information once it becomes available.",
+          "title": "Investigando",
+          "description": "Há um problema temporário de rede com o provedor de nuvem do ESXBot, o que pode fazer com que o ESXBot responda até que seja corrigido. Eles estão atualmente investigando o problema. Agradecemos sua paciência e postaremos informações adicionais assim que estiverem disponíveis.",
           "time": 1520233050235
         }
       ],
@@ -19,21 +19,21 @@
   ],
   "1422018": [
     {
-      "title": "Bastion Bot was down",
+      "title": "ESXBot estava inativo",
       "reports": [
         {
-          "title": "Resolved",
-          "description": "Bastion Bot is up and running at full speed and this incident is resolved.",
+          "title": "Resolvido",
+          "description": "ESXBot está instalado e funcionando a toda velocidade e este incidente foi resolvido.",
           "time": 1518614820000
         },
         {
-          "title": "Update",
-          "description": "We've found the cause of the issue being unable to connect to the Discord Gateway. We are looking into why it was caused and try to fix it ASAP.",
+          "title": "Atualização",
+          "description": "Descobrimos que a causa do problema não pode se conectar ao Gateway Discord. Estamos investigando por que isso foi causado e tentamos corrigi-lo o quanto antes.",
           "time": 1518614340000
         },
         {
-          "title": "Identified",
-          "description": "We've identified an issue caused Bastion to go down on all servers. And we are taking steps to find the cause of the issue and to fix it ASAP.",
+          "title": "Identificado",
+          "description": "Identificamos um problema que levou o ESXBot a cair em todos os servidores. E estamos tomando medidas para encontrar a causa do problema e corrigi-lo o mais rápido possível.",
           "time": 1518614100000
         }
       ],
