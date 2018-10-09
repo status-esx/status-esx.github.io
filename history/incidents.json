@@ -17,50 +17,27 @@
       "resolved": 1520234685526
     }
   ],
-  "1422018": [
+  "9102018": [
     {
       "title": "ESXBot estava inativo",
       "reports": [
         {
           "title": "Resolvido",
           "description": "ESXBot está instalado e funcionando a toda velocidade e este incidente foi resolvido.",
-          "time": 1518614820000
+          "time": 1539118800571
         },
         {
           "title": "Atualização!",
           "description": "Descobrimos que a causa do problema não pode se conectar ao Gateway Discord. Estamos investigando por que isso foi causado e tentamos corrigi-lo o quanto antes.",
-          "time": 1518614340000
+          "time": 1539114800571
         },
         {
           "title": "Identificado",
           "description": "Identificamos um problema que levou o ESXBot a cair em todos os servidores. E estamos tomando medidas para encontrar a causa do problema e corrigi-lo o mais rápido possível.",
-          "time": 1518614100000
+          "time": 1539112800571
         }
       ],
-      "resolved": 1518614820000
+      "resolved": 1539118800571
     }
-  ],
-  "9102018": [
-  {
-    "title": "ESXBot estava inativo",
-    "reports": [
-      {
-        "title": "Resolvido",
-        "description": "ESXBot está instalado e funcionando a toda velocidade e este incidente foi resolvido.",
-        "time": 1539090840
-      },
-      {
-        "title": "Atualização!",
-        "description": "Descobrimos que a causa do problema não pode se conectar ao Gateway Discord. Estamos investigando por que isso foi causado e tentamos corrigi-lo o quanto antes.",
-        "time": 1539112440
-      },
-      {
-        "title": "Identificado",
-        "description": "Identificamos um problema que levou o ESXBot a cair em todos os servidores. E estamos tomando medidas para encontrar a causa do problema e corrigi-lo o mais rápido possível.",
-        "time": 1539123240
-      }
-    ],
-    "resolved": 1539123360
-  }
-]
+  ]
 }
