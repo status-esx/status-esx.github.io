@@ -54,7 +54,7 @@ $.ajax({
 });
 
 $.ajax({
-  url: 'https://discordapp.com/api/guilds/485515687947665408/embed.json',
+  url: 'https://discordapp.com/api/guilds/432980396070666250/embed.json',
   dataType: 'json',
   error: (response, type, exception) => {
     console.error({
