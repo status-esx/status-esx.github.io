@@ -134,6 +134,33 @@ $.ajax({
 });
 
 $.ajax({
+  url: 'https://resources-esx.github.io',
+  error: (response, type, exception) => {
+    console.error({
+      exception: exception,
+      type: type,
+      response: response
+    });
+
+    let element = document.getElementById('esx:resources');
+    element.innerHTML = 'Serviço indisponível';
+    element.setAttribute('style', 'color: #DD0000');
+
+    element = document.getElementById('status');
+    element.innerHTML = 'Grande interrupção de serviço';
+    $('#status').addClass('orange');
+    $('#status').removeClass('green yellow');
+  },
+  statusCode: {
+    200: () => {
+      let element = document.getElementById('esx:resources');
+      element.innerHTML = 'Online';
+      element.setAttribute('style', 'color: #71BF60');
+    }
+  }
+});
+
+$.ajax({
   url: '/history/incidents.json',
   dataType: 'json',
   error: (response, type, exception) => {
