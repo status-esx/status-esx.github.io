@@ -47,20 +47,20 @@
       {
         "title": "Resolvido",
         "description": "ESXBot está instalado e funcionando a toda velocidade e este incidente foi resolvido.",
-        "time": 1539105360
+        "time": 1539090840
       },
       {
         "title": "Atualização!",
         "description": "Descobrimos que a causa do problema não pode se conectar ao Gateway Discord. Estamos investigando por que isso foi causado e tentamos corrigi-lo o quanto antes.",
-        "time": 1539068400
+        "time": 1539112440
       },
       {
         "title": "Identificado",
         "description": "Identificamos um problema que levou o ESXBot a cair em todos os servidores. E estamos tomando medidas para encontrar a causa do problema e corrigi-lo o mais rápido possível.",
-        "time": 1539043200
+        "time": 1539123240
       }
     ],
-    "resolved": 1539112560
+    "resolved": 1539123360
   }
 ]
 }
