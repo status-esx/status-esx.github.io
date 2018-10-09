@@ -40,14 +40,24 @@
       "resolved": 1518614820000
     }
   ],
-  "8102018": [
+  "9102018": [
   {
-    "title": "Erros nos sistemas",
+    "title": "ESXBot estava inativo",
     "reports": [
       {
-        "title": "Atualização",
-        "description": "Atualização em todos nossos sistemas!",
-        "time": 1517032767665
+        "title": "Resolvido",
+        "description": "ESXBot está instalado e funcionando a toda velocidade e este incidente foi resolvido.",
+        "time": 1518614820000
+      },
+      {
+        "title": "Atualização!",
+        "description": "Descobrimos que a causa do problema não pode se conectar ao Gateway Discord. Estamos investigando por que isso foi causado e tentamos corrigi-lo o quanto antes.",
+        "time": 1518614340000
+      },
+      {
+        "title": "Identificado",
+        "description": "Identificamos um problema que levou o ESXBot a cair em todos os servidores. E estamos tomando medidas para encontrar a causa do problema e corrigi-lo o mais rápido possível.",
+        "time": 1518614100000
       }
     ],
     "resolved": 1517032767665
