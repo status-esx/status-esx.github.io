@@ -171,7 +171,7 @@ $.ajax({
     });
   },
   success: (incidents) => {
-    let months = [ 'Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Aug', 'Set', 'Out', 'Nov', 'Dez' ];
+    let months = [ 'January' 'February' 'March' 'April' 'May' 'June' 'July' 'August' 'September' 'October' 'November' 'December' ];
     let date = new Date();
 
     let day = date.getDate();
